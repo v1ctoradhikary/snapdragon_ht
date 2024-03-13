@@ -204,4 +204,25 @@ transition: filter 300ms, transform 300ms; /* Added transform to the transition 
 }
 
 
+.ThanBtn img{
+    margin-top: 1px;
+    height: 120px;
+    width: 120px;
+}
+
+
+.Spider img{
+      position: relative;
+    top: -35px;
+    height: 120px;
+    width: 120px;
+}
+
+.HulkBtn img{
+
+    margin-top: 1px;
+    height: 120px;
+    width: 120px;
+}
+
 
