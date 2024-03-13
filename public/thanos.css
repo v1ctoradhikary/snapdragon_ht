@@ -1,0 +1,44 @@
+.Tpage{
+    background-image: url(thanosBg.jpg);
+    background-size: 100% 100%;
+    height: 798px;
+    width: 100%;
+}
+
+#navbar{
+    margin-top: -15px;
+    margin-bottom: 8px;
+    position: absolute;
+    /* background-color: rgb(118, 118, 118); */
+    opacity: 80%;
+}
+
+.Center{
+ display: flex;
+ margin-top: 1500px;
+}
+
+.Center div{
+    height: 400px;
+    width: 400px;
+}
+
+.Lthano{
+   margin-top: 168px;
+    width: 450px;
+    height: 700px;
+}
+
+.RThano img{
+    margin-top: 150px;
+    width: 400px;
+    height: 600px;
+}
+
+.Game{
+    height: 850px;
+    width: 100%;
+    background-color: white;
+    border: 2px solid black;
+}
+

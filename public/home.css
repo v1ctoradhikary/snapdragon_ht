@@ -1,0 +1,207 @@
+body{
+    margin: 0px;
+    background-color: black;
+}
+
+.home1{
+border-radius: 40px;
+height: 799px;
+background-image: url(./909185.jpg);
+background-size: 1710px 800px;
+margin: 120px;
+margin-top: 40px;
+will-change: filter, transform; /* Added transform */
+transition: filter 300ms, transform 300ms; /* Added transform to the transition */
+}
+
+.home1:hover{
+    transform: translateY(-10px) translateZ(2px);
+    filter: drop-shadow(0 0 0.5em rgb(255, 255, 255)); /* Adjusted shadow size for a subtle effect */
+    transform: scale(1.1); /* Added scale on hover for a slight zoom effect */
+}
+
+.home2{
+    border-radius: 40px;
+    height: 800px;
+    background-image: url(182910.jpg);
+    background-size: 1710px 820px;
+    margin: 120px;
+    will-change: filter, transform; /* Added transform */
+    transition: filter 300ms, transform 300ms; /* Added transform to the transition */
+    display: flex;
+    justify-content: end;
+    }
+
+    .home2:hover{
+        transform: translateY(-10px) translateZ(2px);
+        filter: drop-shadow(0 0 0.5em rgb(255, 255, 255)); /* Adjusted shadow size for a subtle effect */
+        transform: scale(1.1); /* Added scale on hover for a slight zoom effect */
+    }   
+
+    .home3{
+        border-radius: 40px;
+        height: 799px;
+        background-image: url(657777.jpg);
+        background-size: 1710px 800px;
+        margin: 120px;
+        will-change: filter, transform; /* Added transform */
+        transition: filter 300ms, transform 300ms; /* Added transform to the transition */
+        }
+
+        .home3:hover{
+        transform: translateY(-10px) translateZ(2px);
+        filter: drop-shadow(0 0 0.5em rgb(255, 255, 255)); /* Adjusted shadow size for a subtle effect */
+        transform: scale(1.1); /* Added scale on hover for a slight zoom effect */
+        }
+
+        .home4{
+            border-radius: 40px;
+            height: 819px;
+            background-image: url(38432.jpg);
+            background-size: 1710px 820px;
+            margin: 120px;
+            display: flex;
+            justify-content: end;
+            will-change: filter, transform; /* Added transform */
+            transition: filter 300ms, transform 300ms; /* Added transform to the transition */
+            }
+
+            .home4:hover{
+                transform: translateY(-10px) translateZ(2px);
+             filter: drop-shadow(0 0 0.5em rgb(255, 255, 255)); /* Adjusted shadow size for a subtle effect */
+             transform: scale(1.1); /* Added scale on hover for a slight zoom effect */
+            }
+
+    
+
+.avngLogo{
+    height: 200px;
+    width: 250px;
+}
+
+.content3{
+    font-family: "Caveat", cursive;
+    width: 300px;
+    height: 400px;
+    margin-left:110px;
+    padding-top: 150px;
+    text-align: center;
+}
+
+.content1{
+    font-family: "Caveat", cursive;
+    width: 300px;
+    height: 400px;
+    margin-left:110px;
+    padding-top: 150px;
+    text-align: center;
+}
+
+.content2{
+    width: 300px;
+    height: 400px;
+    padding-top: 150px;
+    text-align: center;
+    margin-right: 90px;
+    font-family: "Cinzel", serif;
+    font-family: "Potta One", system-ui;
+}
+
+.content4{
+    font-family: "Caveat", cursive;
+    width: 300px;
+    height: 400px;
+    padding-top: 150px;
+    text-align: center;
+    margin-right: 40px;
+    font-family: "Potta One", system-ui;
+}
+
+.content3 img{
+    height: 350px;
+    width: 350px;
+    margin: -120px;
+}
+
+.content2 img{
+    height: 200px;
+    width: 300px;
+    margin-top: -80px;
+    /* margin: -120px; */
+}
+
+.content4 img{
+    height: 200px;
+    width: 300px;
+    margin-top: -80px;
+    /* margin: -120px; */
+}
+
+.content1 img{
+    height: 200px;
+    width: 300px;
+    margin-top: -80px;
+    /* margin: -120px; */
+}
+
+
+.cntData{
+    font-size: 24px;
+    color: rgb(17, 17, 80);
+}
+
+.cntData1{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
+
+.cntData2{
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+}
+
+.cntData3{
+    font-size: 27px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+}
+
+#navbar{
+    height: 60px;
+    width: 100%;
+    background-color: none;
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+}
+
+
+#navbar div{
+    margin: 15px;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: rgb(233, 237, 228);
+    will-change: filter, transform; /* Added transform */
+transition: filter 300ms, transform 300ms; /* Added transform to the transition */
+}
+
+#navbar div:hover{
+    margin: 15px;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: rgb(233, 237, 228);
+    transform: translateY(-10px) translateZ(2px);
+    filter: drop-shadow(0 0 0.5em rgb(255, 255, 255)); /* Adjusted shadow size for a subtle effect */
+    transform: scale(1.1); /* Added scale on hover for a slight zoom effect */
+}
+
+#navbar div a{
+    margin: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+
+

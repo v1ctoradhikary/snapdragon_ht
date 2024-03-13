@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding-right: 10px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(loginImg.jpg);
+    background-size: 100% 800px;
+    font-family: "Lexend", sans-serif;
+  }
+  
+  .login-card {
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    opacity: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    padding: 20px;
+    /* max-width: 300px; */
+    width: 280px;
+    height: 300px;
+    margin-right: 80px;
+    text-align: center;
+    /* transition: transform 0.3s ease-in-out; */
+  
+    will-change: filter, transform; /* Added transform */
+   transition: filter 300ms, transform 300ms; /* Added transform to the transition */
+    /* Lift the card slightly */
+  }
+  
+  .login-card:hover {
+    opacity: 70%;
+    transform: translateY(-2px) translateZ(10px);
+    filter: drop-shadow(0 0 0.5em rgb(255, 255, 255)); /* Adjusted shadow size for a subtle effect */
+    transform: scale(1.1); /* Added scale on hover for a slight zoom effect */
+  }
+  
+  .login-card h2 {
+    margin-bottom: 35px;
+  }
+  
+  .login-card form input {
+    width: 80%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .login-card form button {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff0000; /* Change this to your desired button color */
+    color: white;
+    cursor: pointer;
+  }
+  
+  .login-card form button:hover {
+    background-color: #0056b3; /* Change this to your desired button hover color */
+  }
+  
+  .forgot {
+    font-size: 10px;
+    margin-left: 170px;
+    margin-bottom: 50px;
+  }
+  
+  .logo {
+      height: 80px;
+      width: 80px;
+      will-change: filter, transform; /* Added transform */
+      transition: filter 300ms, transform 300ms; /* Added transform to the transition */
+    }
+    
+    .logo:hover {
+      filter: drop-shadow(0 0 0.5em red); /* Adjusted shadow size for a subtle effect */
+      transform: scale(1.1); /* Added scale on hover for a slight zoom effect */
+    }
+    
+    @keyframes logo-spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    
+    @media (prefers-reduced-motion: no-preference) { /* Corrected media query syntax */
+      .logo {
+        animation: logo-spin infinite 10s linear;
+      }
+    }
+    
+  
+  .navShield{
+      display: flex;
+      justify-content: start;
+      position: fixed;
+      bottom: 700px;
+      left: 20px;
+      align-items: start;
+    
+  }
+  
+  

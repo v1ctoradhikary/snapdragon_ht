@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Game</title>
+</head>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-image: url(thanosBg.jpg);
+        background-size: 100% 800px;
+    }
+
+    .game-container {
+        width: 800px;
+        padding: 20px;
+        margin-right: 800px;
+        border-radius: 10px;
+        row-gap: 15px;
+        opacity: 100%;
+        background-color: white;
+        /* background-image: linear-gradient(90deg, #000000, #ccc); */
+ 
+    }
+
+
+    .cards-container {
+        display: grid;
+        grid-template-rows: 125px 125px 125px;
+        grid-template-columns: 200px 200px 200px 200px;
+        grid-gap: 20px 10px;
+        place-items: center;
+    }
+
+    .heading-container {
+        text-align: center;
+    }
+
+    .gfg-heading {
+        color: #0E9D57;
+    }
+
+    .card {
+        justify-items: center;
+        display: flex;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .outline-image {
+        position: absolute;
+        border-radius: 10px;
+        top: 0;
+        left: 0;
+        height: 140px;
+        width: 125px;
+        border-radius: 50%;
+    }
+
+    .card-image {
+        height: 125px;
+        width: 125px;
+        transform: rotateY(90deg);
+        transition: all ease-in 0.25s;
+        mix-blend-mode: multiply;
+    }
+
+    .progress-container {
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin: 50px 0 20px 0;
+    }
+
+    .move-counter {
+        padding: 10px 20px;
+        border-radius: 25px;
+        border: 1px solid #ccc;
+    }
+
+    .restart-button {
+        padding: 10px 20px;
+        background-color: #0E9D57;
+        border: none;
+        border-radius: 25px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .restart-button:hover {
+        background-color: transparent;
+        border: 1px solid #0E9D57;
+        color: #0E9D57;
+    }
+
+    /* Dynamic classes that are being added by JavaScript */
+    .toggled .card-image {
+        transform: rotateY(0deg);
+        transition-delay: 0.25s;
+    }
+
+    .item .outline-image {
+        transition: all ease-in 0.25s;
+        transition-delay: 0.25s;
+    }
+
+    .toggled .outline-image {
+        transform: rotateY(90deg);
+        transition-delay: 0s;
+    }
+
+    @media screen and (max-width: 767px) {
+        .game-container {
+            width: 100%;
+        }
+
+        .cards-container {
+            grid-template-rows: 125px 125px 125px 125px;
+            grid-template-columns: 33% 33% 33%;
+            grid-gap: 10px 10px;
+        }
+
+        .outline-image {
+            height: 100px;
+            width: 100px;
+        }
+
+        .card-image {
+            height: 100px;
+            width: 100px;
+        }
+
+        .progress-container {
+            margin: 10px 0 10px 0;
+        }
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div id="dynamic-cards" class="game-container">
+            <div class="cards-container">
+                <div class="card">
+                    <img src="pngwing12.com.png"
+                        class="outline-image">  
+                    <img id="1" src="yellow stone.png"
+                        alt="HTML Image" class="card-image">
+                </div>
+                <div class="card">
+                    <img src="pngwing12.com.png"
+                        class="outline-image">
+                    <img id="2" src="yellow stone.png"
+                        alt="JavaScript Image" class="card-image">
+                </div>
+                <div class="card">
+                    <img src="pngwing12.com.png"
+                        class="outline-image">
+                    <img id="3" src="purple stone.png"
+                        alt="CSS Image" class="card-image">
+                </div>
+                <div class="card">
+                    <img src="pngwing12.com.png"
+                        class="outline-image">
+                    <img id="4" src="purple stone.png"
+                        alt="JavaScript Image" class="card-image">
+                </div>
+
+                <div class="card">
+                    <img src="pngwing12.com.png"
+                        class="outline-image">
+                    <img id="5" src="red stone.png"
+                        alt="HTML Image" class="card-image">
+                </div>
+                <div class="card">
+                    <img src="pngwing12.com.png"
+                        class="outline-image">
+                    <img id="6" src="red stone.png"
+                        alt="VUE Image" class="card-image">
+                </div>
+                <div class="card">
+                    <img src="pngwing12.com.png"
+                        class="outline-image">
+                    <img id="7" src="green stone.png"
+                        alt="CSS Image" class="card-image">
+                </div>
+                <div class="card">
+                    <img src="pngwing12.com.png"
+                        class="outline-image">
+                    <img id="8" src="green stone.png"
+                        alt="React Image" class="card-image">
+                </div>
+
+                <div class="card">
+                    <img src="pngwing12.com.png"
+                        class="outline-image">
+                    <img id="9" src="orange stone.png"
+                        alt="VUE Image" class="card-image">
+                </div>
+                <div class="card">
+                    <img src="pngwing12.com.png"
+                        class="outline-image">
+                    <img id="10"
+                        src="orange stone.png"
+                        alt="Angular Image" class="card-image">
+                </div>
+                <div class="card">
+                    <img src="pngwing12.com.png"
+                        class="outline-image">
+                    <img id="11" src="blue stone.png"
+                        alt="React Image" class="card-image">
+                </div>
+                <div class="card">
+                    <img src="pngwing12.com.png"
+                        class="outline-image">
+                    <img id="12"
+                        src="blue stone.png"
+                        alt="Angular Image" class="card-image">
+                </div>
+            </div>
+
+            <div class="progress-container">
+                <div class="move-counter">Moves: 0</div>
+                <button id="restart" class="restart-button">
+                    Restart Game
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const cards =
+            document.getElementsByClassName('card');
+        let allImages = document.getElementsByClassName('card-image');
+        let movesDisplay = document.querySelector('.move-counter');
+        let toggledCardsArray = [];
+        let move = 0;
+        let winCount = 0;
+        const restart = document.getElementById('restart');
+
+        const imagesLinkArray = [
+            {
+                id: 1,
+                image:
+                    'https://i.imgur.com/uZKlfDq.png',
+                newAlt: 'Blue Image'
+            },
+            {
+                id: 2,
+                image:
+                    'https://i.imgur.com/hLbwKqo.png',
+                newAlt: 'HTML Image'
+            },
+            {
+                id: 3,
+                image:
+                    'https://i.imgur.com/1u8kwoI.png',
+                newAlt: 'Green Image'
+            },
+            {
+                id: 4,
+                image:
+                    'https://i.imgur.com/kOunmL3.png',
+                newAlt: 'React Image'
+            },
+            {
+                id: 5,
+                image:
+                    'https://i.imgur.com/9NVSlS9.png',
+                newAlt: 'Vue Image'
+            },
+            {
+                id: 6,
+                image:
+                    'https://i.imgur.com/1u8kwoI.png',
+                newAlt: 'JavaScript Image'
+            },
+            {
+                id: 7,
+                image:
+                    'https://i.imgur.com/9NVSlS9.png',
+                newAlt: 'Vue Image'
+            },
+            {
+                id: 8,
+                image:
+                    'https://i.imgur.com/hLbwKqo.png',
+                newAlt: 'HTML Image'
+            },
+            {
+                id: 9,
+                image:
+                    'https://i.imgur.com/39CuqcR.png',
+                newAlt: 'CSS Image'
+            },
+            {
+                id: 10,
+                image:
+                    'https://i.imgur.com/uZKlfDq.png',
+                newAlt: 'Blue Image'
+            },
+            {
+                id: 11,
+                image:
+                    'https://i.imgur.com/39CuqcR.png',
+                newAlt: 'CSS Image'
+            },
+            {
+                id: 12,
+                image:
+                    'https://i.imgur.com/kOunmL3.png',
+                newAlt: 'React Image'
+            }
+        ]
+
+        // function to restart the game 
+        const restartGame = () => {
+            let toggledCard =
+                document.getElementsByClassName('card toggled');
+            imagesLinkArray.sort(() => Math.random() - 0.5);
+            Object.values(toggledCard).forEach(function (el) {
+                setTimeout(() => {
+                    el.classList.remove("toggled");
+                }, 0);
+            })
+            toggledCardsArray.length = 0;
+            move = 0;
+            winCount = 0;
+            movesDisplay.innerText = `Moves: ${move}`;
+            let allImagesSrc = document.getElementsByClassName('card-image');
+            Object.values(allImagesSrc).forEach((el, index) => {
+                el.src = imagesLinkArray[index].image;
+                el.alt = imagesLinkArray[index].newAlt;
+                el.id = imagesLinkArray[index].id
+            })
+        }
+        restart.addEventListener('click', restartGame);
+
+        //checking for the last clicked and current  
+        //clicked cards and applying changes accordingly 
+        for (var i = 0; i < cards.length; i++) {
+            cards[i].addEventListener('click', function () {
+                this.classList.add("toggled");
+                toggledCardsArray.push(this);
+                let thisImgSrc = this.querySelector('.card-image').src;
+                let previousImgSrc =
+                    toggledCardsArray[toggledCardsArray.length - 2].querySelector('.card-image').src;
+                if (thisImgSrc !== previousImgSrc) {
+                    toggledCardsArray.forEach(function (el) {
+                        setTimeout(() => {
+                            el.classList.remove("toggled");
+                        }, 500);
+                    })
+                    toggledCardsArray.length = 0;
+                    move++;
+                }
+                else {
+                    toggledCardsArray.length = 0;
+                    move++;
+                    winCount++;
+                }
+                movesDisplay.innerText = `Moves: ${move}`;
+                if (winCount === 6) {
+                    setTimeout(() => {
+                        alert(`Congratulations!!! You won the game in ${move} moves.`)
+                    }, 300)
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>
