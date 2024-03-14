@@ -45,3 +45,7 @@ app.get("/exclusive",(req,res)=>{
     res.render("exclusive2.ejs");
 });
 
+app.get("/spider",(req,res)=>{
+    res.render("spiderman.ejs");
+});
+
