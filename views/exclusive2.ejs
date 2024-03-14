@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exclusive.css">
+    <title>Exclusive Content</title>
+</head>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.full {
+  background-image: url(spider-bg.jpg);
+  height: 100vh;
+  background-size:100% 799px;
+}
+
+.top {
+  height: 70px;
+  background-color: rgba(28, 25, 25, 0.74);
+}
+
+
+.center {
+  background-color: rgba(28, 25, 25, 0.538);
+  height: 300px;
+  width: 550px;
+  position: relative;
+  top: 180px;
+  left: 570px;
+  border-radius: 20px;
+}
+input {
+  background-color: rgba(0, 0, 0, 0.641);
+  height: 60px;
+  width: 350px;
+  border: 0px;
+  position: relative;
+  top: 180px;
+  left: 100px;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  font-size: larger;
+}
+#a {
+  height: 200px;
+  position: relative;
+  top: -500px;
+  right: -1510px;
+}
+#b {
+  height: 400px;
+  position: relative;
+  top: -350px;
+  left: -200px;
+}
+#c {
+  height: 350px;
+  position: relative;
+  top: -260px;
+  left: 340px;
+}
+
+#navbar{
+            background-color: rgba(0, 0, 0, 0.5);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            display: flex;
+            position: absolute;
+            top: 0px;
+            width: 100%;
+            justify-content: center;
+            height: 60px;
+            padding-top:8px ;
+            padding-bottom: 10px;
+        }
+
+    #navbar div{
+    margin: 20px;
+    height: 20px;
+    border-radius: 20px;
+    padding: 4px;
+    padding-bottom: 2px;
+    background-color: rgb(233, 237, 228);
+    will-change: filter, transform; /* Added transform */
+    transition: filter 300ms, transform 300ms; /* Added transform to the transition */
+}
+
+#navbar div:hover{
+    margin: 15px;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: rgb(233, 237, 228);
+    transform: translateY(-10px) translateZ(2px);
+    filter: drop-shadow(0 0 0.5em rgb(255, 255, 255)); /* Adjusted shadow size for a subtle effect */
+    transform: scale(1.1); /* Added scale on hover for a slight zoom effect */
+}
+
+#navbar div a{
+    margin: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+</style>
+<body>
+    <div class="full">
+        <div id="navbar">
+            <div>
+            <a href="/social">Social Verse</a>
+            </div>
+        <div>   
+        <a href="/home">Gaming Verse</a>
+        </div> 
+            <div>
+                <a href="/exclusive">Exclusive Verse</a>
+            </div>
+        </div>
+        <div class="center">
+            <input id="input" type="text" placeholder="ENTER EXCLUSIVE CODE">
+        </div>
+        <img id="a" src="pngimg.com - spider_man_PNG48.png" alt="spider1">
+        <img id="b" src="pngimg.com - spider_man_PNG56.png" alt="spider2">
+        <img id="c" src="spider3.png" alt="spider3">
+    </div>
+</body>
+</html>

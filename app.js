@@ -41,3 +41,7 @@ app.get("/social",(req,res)=>{
     res.render("social.ejs");
 });
 
+app.get("/exclusive",(req,res)=>{
+    res.render("exclusive2.ejs");
+});
+

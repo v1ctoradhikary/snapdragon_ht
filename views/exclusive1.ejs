@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusive Content</title>
+</head>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .full {
+    height: 100vh;
+    width: 100vw;
+    /* background-color: bisque; */
+    background-image: url(wp1703730-the-avengers-wallpapers.jpg);
+    background-size: contain;
+  }
+  .container {
+    /* margin: 20px; */
+    background-color: rgba(152, 154, 155, 0.488);
+    position: relative;
+    top: 28px;
+    left: 30px;
+    height: 90%;
+    width: 95%;
+    border-radius: 15px;
+  }
+  .top,
+  .bottom {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    /* margin-top: 20px; */
+  }
+  .container img {
+    height: 150px;
+    border-radius: 20px;
+    /* margin-top: 20px; */
+  }
+  .bg-blur {
+    background-color: rgba(152, 154, 155, 0.856);
+    border-radius: 20px;
+    margin-top: 15px;
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 40px;
+  }
+  #moonKnight {
+    width: 350px;
+    position: relative;
+    top: -20px;
+  }
+  #blur-text {
+    position: relative;
+    top: -40px;
+  }
+  #shang {
+    height: 100px;
+    position: relative;
+    border-radius: 0px;
+    /* right: -200px; */
+  }
+  #bottom-blur {
+    height: 200px;
+    position: relative;
+    top: -5px;
+    left: -10px;
+  }
+  
+  #img1 {
+    height: 250px;
+    margin-bottom: 30px;
+    position: relative;
+    top: 35px;
+    left: 40px;
+  }
+  
+  #img2 {
+    margin-bottom: 30px;
+    height: 250px;
+    position: relative;
+    right: 50px;
+    top: 100px;
+  }
+  
+  #blur-text-2 {
+    position: relative;
+    top: 15px;
+  }
+
+  #bottom-blur{
+position: relative;
+top: 110px;
+  }
+  
+</style>
+
+
+<body>
+
+    <div class="full">
+        <div class="container">
+            
+            <div class="top">
+                <img src="8330186.jpg" id="img1" alt="first Image">
+                <div class="bg-blur same">
+                    <img id="moonKnight" src="df2rgzf-b8ebf0ff-80dd-453f-8309-3ab820b2a3f3-removebg-preview.png" alt="Moonlight">
+                    <p id="blur-text">Moon Knight is a Marvel superhero, created in 1975. His alter ego is Marc Spector, empowered by the Egyptian moon god Khonshu. He fights crime with enhanced abilities and struggles with mental health issues, often depicted with multiple personalities.</p>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="bg-blur" id="bottom-blur">
+                    <img id="shang" src="Shang-Chi_and_the_Legend_of_the_Ten_Rings_silver_logo_29.webp" alt="blur image">
+                    <p id="blur-text-2">The central theme of Shang-Chi revolves around identity, family, and destiny as the titular character grapples with his past, cultural heritage, and the desire to forge his own path while confronting his father's legacy.</p>
+                </div>
+                <img src="1148028.jpg" id="img2" alt="image">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
