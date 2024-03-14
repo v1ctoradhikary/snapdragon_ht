@@ -33,3 +33,11 @@ app.get("/thanos",(req,res)=>{
     res.render("thanosGame.ejs");
 });
 
+app.get("/hulk",(req,res)=>{
+    res.render("hulk.ejs");
+});
+
+app.get("/maze",(req,res)=>{
+    res.render("maze.ejs");
+})
+
