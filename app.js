@@ -42,10 +42,14 @@ app.get("/social",(req,res)=>{
 });
 
 app.get("/exclusive",(req,res)=>{
-    res.render("exclusive2.ejs");
+    res.render("exclusive1.ejs");
 });
 
+// app.get("/spider",(req,res)=>{
+//     res.render("spiderman.ejs");
+// });
+
 app.get("/spider",(req,res)=>{
-    res.render("spiderman.ejs");
-});
+    res.render("spider.ejs");
+})
 
