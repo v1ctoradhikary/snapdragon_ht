@@ -149,9 +149,56 @@
         }
 
     }
+
+    #navbar{
+        background-color: rgba(0, 0, 0, 0.5);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    padding-top: 6px;
+    justify-content: center;
+}
+
+#navbar div{
+    margin: 15px;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: rgb(233, 237, 228);
+    will-change: filter, transform; /* Added transform */
+    transition: filter 300ms, transform 300ms; /* Added transform to the transition */
+}
+
+#navbar div:hover{
+    margin: 15px;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: rgb(233, 237, 228);
+    transform: translateY(-10px) translateZ(2px);
+    filter: drop-shadow(0 0 0.5em rgb(255, 255, 255)); /* Adjusted shadow size for a subtle effect */
+    transform: scale(1.1); /* Added scale on hover for a slight zoom effect */
+}
+
+#navbar div a{
+    margin: 15px;
+    text-decoration: none;
+    color: black;
+}
 </style>
 
 <body>
+    <div id="navbar">
+        <div>
+        <a href="/social">Social Verse</a>
+        </div>
+    <div>   
+    <a href="/home">Gaming Verse</a>
+    </div> 
+        <div>
+            <a href="">Exclusive Verse</a>
+        </div>
+    </div>
     <div class="container">
         <div id="dynamic-cards" class="game-container">
             <div class="cards-container">

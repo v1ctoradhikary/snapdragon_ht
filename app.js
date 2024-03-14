@@ -37,7 +37,7 @@ app.get("/hulk",(req,res)=>{
     res.render("hulk.ejs");
 });
 
-app.get("/maze",(req,res)=>{
-    res.render("maze.ejs");
-})
+app.get("/social",(req,res)=>{
+    res.render("social.ejs");
+});
 
